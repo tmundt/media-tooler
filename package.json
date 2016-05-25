@@ -1,0 +1,27 @@
+{
+  "name": "media-tooler",
+  "version": "1.0.0",
+  "description": "Tool for processing media data with ffmpeg and AngularJS/Node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tmundt/media-tooler.git"
+  },
+  "keywords": [
+    "ffmpeg",
+    "angularjs",
+    "fluent-ffmpeg"
+  ],
+  "author": "Thomas Mundt",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tmundt/media-tooler/issues"
+  },
+  "homepage": "https://github.com/tmundt/media-tooler#readme",
+  "dependencies": {
+    "fluent-ffmpeg": "^2.1.0"
+  }
+}

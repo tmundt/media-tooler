@@ -31,3 +31,14 @@ node_modules
 
 # Optional REPL history
 .node_repl_history
+
+#Bower
+public/lib
+
+# Intellij
+.idea/
+*.iml
+*.iws
+
+# Mac
+.DS_Store

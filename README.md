@@ -6,3 +6,13 @@ Technologies:
 - Node.js 6.0.0
 - npm Modul fluent-ffmpeg
 - AngularJS 1.5.5
+
+Before running, do:
+
+npm install
+bower install
+
+Then start server and call the app in your browser:
+
+node server
+http://localhost:3333
