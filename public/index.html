@@ -8,6 +8,17 @@
 <h2>
     Media Tooler: Processing ffmpeg with AngularJS
 </h2>
+<div ng-controller="homeCtrl">
+    Bitte Datei auswählen:
+    <input type="file" ng-model="file" change="upload()" />
+</div>
+<script src="lib/angular/angular.js"></script>
+<script src="lib/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+<script src="lib/jquery/dist/jquery.js"></script>
+<script src="lib/angular-toastr/dist/angular-toastr.tpls.js"></script>
+<script src="lib/bootstrap/dist/js/bootstrap.js"></script>
 
+<script src="app.js"></script>
+<script src="assets/js/home.controller.js"></script>
 </body>
 </html>

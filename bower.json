@@ -1,0 +1,30 @@
+{
+  "name": "media-tooler",
+  "description": "Tool for processing media data with ffmpeg and AngularJS/Node.js",
+  "main": "index.js",
+  "authors": [
+    "Thomas Mundt"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "ffmpeg",
+    "angularjs",
+    "fluent-ffmpeg"
+  ],
+  "homepage": "https://github.com/tmundt/media-tooler",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.5",
+    "bootstrap": "^3.3.6",
+    "angular-bootstrap": "^1.3.3",
+    "angular-toastr": "^1.7.0"
+  }
+}
