@@ -10,7 +10,11 @@
 </h2>
 <div ng-controller="homeCtrl">
     Bitte Datei auswählen:
-    <input type="file" ng-model="file" change="upload()" />
+    <div>
+    <input type="file" file-chooser ng-model="imageFile" />
+	<button type="button" ng-click = "convertImageToVideo()">Convert Image</button>
+	</div>
+
 </div>
 <script src="lib/angular/angular.js"></script>
 <script src="lib/angular-bootstrap/ui-bootstrap-tpls.js"></script>
@@ -20,5 +24,6 @@
 
 <script src="app.js"></script>
 <script src="assets/js/home.controller.js"></script>
+<script src="assets/js/filechooser.directive.js"></script>
 </body>
 </html>
