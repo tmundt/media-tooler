@@ -5,7 +5,7 @@
  */
 
 var appName = 'media-tools';
-var app = angular.module(appName, ['ui.bootstrap', 'toastr']);
+var app = angular.module(appName, ['ui.bootstrap', 'toastr','ngFileUpload']);
 angular.element(document).ready(function() {
     angular.bootstrap(document, [appName]);
 });

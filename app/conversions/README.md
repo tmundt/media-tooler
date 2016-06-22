@@ -1,0 +1,1 @@
+This is the server sided folder for converted images, do not delete!

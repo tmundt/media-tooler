@@ -1,0 +1,1 @@
+This is the server sided folder for uploaded images/data, do not delete!

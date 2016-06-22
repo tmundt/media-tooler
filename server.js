@@ -10,7 +10,11 @@
 var express = require('express'),
     app = express(),
     path = require('path'),
-    bodyParser = require('body-parser');
+    multipart = require('connect-multiparty'),
+    bodyParser = require('body-parser')
+    // multer = require('multer'),
+    // upload = multer({ dest: 'uploads/' })
+    ;
 
 var port = process.env.PORT || 3333;
 
@@ -24,6 +28,12 @@ app.use(express.static(__dirname + '/public'));
 app.get('/', function (req, res) {
     res.sendfile(__dirname + '/public/index.html');
 });
+
+// app.use(multer({
+//
+//     dest: './uploads/'
+//
+// }));
 
 // Routes
 require('./app/routes')(app);

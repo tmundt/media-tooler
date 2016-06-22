@@ -3,17 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <title>Media-Tooler</title>
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css">
 </head>
 <body>
 <h2>
     Media Tooler: Processing ffmpeg with AngularJS
 </h2>
 <div ng-controller="homeCtrl">
-    Bitte Datei auswählen:
-    <div>
+<!--    <div>
     <input type="file" file-chooser ng-model="imageFile" />
 	<button type="button" ng-click = "convertImageToVideo()">Convert Image</button>
-	</div>
+	</div>-->
+<!--<form>-->
+    <!--<input type="file" ng-file-select="fileSelected($files)" accept="'image/*'">-->
+    <!--<input type="submit" ng-click="uploadFile()" >-->
+    <!--<div class="button btn-default" ngf-select ng-model="file" name="file" ngf-pattern="'image/*'"-->
+         <!--ngf-accept="'image/*'" ngf-max-size="20MB" ngf-min-height="100"-->
+         <!--ngf-resize="{width: 100, height: 100}">Select-->
+    <!--</div>-->
+<!--</form>-->
+
+    <!--<button class="btn btn-default" ngf-select="upload($file)">Upload on file select</button>-->
+
+    <form name="uploadForm">
+        Bitte Bild auswählen: <input type="file" ngf-select="" ng-model="picFile" name="file" ngf-accept="'image/*'" required="true">
+        <i ng-show="uploadForm.file.$error.required">*required</i>
+        <br>
+        <button class="btn btn-success" ng-disabled="!uploadForm.$valid" ng-click="upload(picFile)">Submit</button>
+        <button class="btn btn-success" ng-disabled="!uploadSuccessfull" ng-click="convertImageToVideo()">Konvertiere</button>
+        <br />
+        <br />
+        <img ngf-src="picFile" class="thumb">
+        <span ng-show="uploadSuccessfull">Upload Successful</span>
+    </form>
+
+
 
 </div>
 <script src="lib/angular/angular.js"></script>
@@ -21,6 +45,8 @@
 <script src="lib/jquery/dist/jquery.js"></script>
 <script src="lib/angular-toastr/dist/angular-toastr.tpls.js"></script>
 <script src="lib/bootstrap/dist/js/bootstrap.js"></script>
+<!--<script src="lib/bootstrap/dist/js/angular-file-upload/angular-file-upload-shim.js"></script>-->
+<script src="lib/ng-file-upload/ng-file-upload.js"></script>
 
 <script src="app.js"></script>
 <script src="assets/js/home.controller.js"></script>

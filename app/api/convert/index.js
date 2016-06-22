@@ -9,6 +9,7 @@ var controller = require('./process.controller');
 
 var router = express.Router();
 
-router.post('/imageToVideo/:pathToImageSource/:pathToVideoTarget, controller.convertImageToVideo');
-
+//router.post('/imageToVideo/:pathToImageSource/:pathToVideoTarget, controller.convertImageToVideo');
+//router.post('/:pathToImageSource', controller.convertImageToVideo);
+router.post('/', controller.convertImageToVideo);
 module.exports = router;

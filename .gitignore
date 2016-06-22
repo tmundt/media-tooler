@@ -42,3 +42,9 @@ public/lib
 
 # Mac
 .DS_Store
+
+# Ignore server side generated files
+app/conversions/*
+app/uploads/*
+!app/conversions/README.md
+!app/uploads/README.md

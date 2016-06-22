@@ -9,4 +9,5 @@ var router = express.Router();
 
 module.exports = function(app) {
     app.use('/api/convert', require('../api/convert'));
+    app.use('/api/upload', require('../api/upload'));
 };
